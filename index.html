@@ -164,8 +164,8 @@ input[type=range]{width:100%;accent-color:var(--accent);cursor:pointer;}
     <div class="section-title">Prioritise activities by benefit vs. complexity</div>
     <div class="section-sub" style="margin-top:-10px;margin-bottom:0">Rate each activity on benefit (how much value it creates) and complexity (how hard it is to deliver). The matrix auto-sorts them into Quick Win, Medium Term, Long Term, or Avoid zones.</div>
   </div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-    <div class="card" style="height:fit-content">
+  <div style="display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:16px">
+    <div class="card">
       <div class="section-title">Activities</div>
       <div class="section-sub">Set benefit (high = good) and complexity (high = hard).</div>
       <div style="display:grid;grid-template-columns:1fr 80px 80px 28px;gap:6px;align-items:center;margin-bottom:6px;padding:0 2px">
@@ -205,13 +205,13 @@ input[type=range]{width:100%;accent-color:var(--accent);cursor:pointer;}
     <div class="metric"><div class="metric-label">High / Very high</div><div class="metric-val" id="high-risk-count" style="color:var(--red)">0</div></div>
     <div class="metric"><div class="metric-label">Overdue mitigations</div><div class="metric-val" id="overdue-count" style="color:var(--amber)">0</div></div>
   </div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+  <div style="display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:16px;margin-bottom:16px">
     <div class="card">
       <div class="section-title">Risk matrix</div>
       <div class="section-sub">Likelihood × Impact grid. Risks are auto-placed based on scores below.</div>
       <div id="risk-matrix-svg"></div>
     </div>
-    <div class="card" style="height:fit-content">
+    <div class="card">
       <div class="section-title">Matrix legend</div>
       <div style="display:grid;gap:6px;font-size:12px;color:var(--ink-2)">
         <div style="display:flex;align-items:center;gap:8px"><span style="width:14px;height:14px;border-radius:3px;background:#dc2626;flex-shrink:0"></span><strong>Critical</strong> — High likelihood + High impact</div>
@@ -241,7 +241,7 @@ input[type=range]{width:100%;accent-color:var(--accent);cursor:pointer;}
     <div class="section-title">Track budget allocation and spend</div>
     <div class="section-sub" style="margin-top:-10px;margin-bottom:0">Enter budget lines with approved amounts, actual spend, and forecasts. Utilisation percentage and the chart update automatically.</div>
   </div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+  <div style="display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:16px;margin-bottom:16px">
     <div>
       <div class="metric-row" style="margin-bottom:0">
         <div class="metric"><div class="metric-label">Total approved</div><div class="metric-val" id="total-budget">$0k</div></div>
